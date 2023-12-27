@@ -1,0 +1,186 @@
+/* ---------------  Defaults  ----------- */
+
+* {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+/* .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+} */
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100; }
+
+/* ---------------  NAV BAR  -------------- */
+nav {
+    width: 100%;
+    margin: 0%;
+    background-color: #094067;
+}
+
+.logo {
+    width: 270px;
+    height: 47px;
+    padding-left: 30px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 15px;
+    float: right;
+    line-height: 1;
+    padding: 20px;
+    text-decoration: none;
+    margin: 1px;
+}
+
+nav ul li a:hover {
+    background-color: #3da9fc;
+    transition: 1s;
+}
+
+nav ul li.dropdown {
+    display: none;
+}
+
+/* ---------------  1st image  -------------- */
+.banner-card {
+    position: relative;
+}
+
+.banner-card img {
+    width: 100%;
+    height: auto;
+}
+
+img.mainimg {
+    width: 100%;
+    height: 900px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 36%;
+    color: #094067;
+    padding: 5px; 
+    left: 3%;
+    background: none;
+}
+
+.banner-text h4 {
+    color: #083c62;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    background: none;
+    padding-bottom: 9px;    
+}
+
+
+
+
+/* ---------------  Responsive at 1325  -------------- */
+@media (max-width: 1325px) { 
+    .img.mainimg {
+        height: 800px;
+    }
+    
+    .banner-text {
+        top: 39%;
+        left: 2%;
+    }
+    
+    .banner-text h4 {
+        font-size: 25px; 
+    }
+}
+
+/* ---------------  Responsive at 768  -------------- */
+@media (max-width: 768px) { 
+/* --- NAV BAR --- */
+nav ul li:not(:nth-child(1)) {
+    display: none;
+}
+
+nav ul li.dropdown {
+    display: block;
+}
+
+nav ul.topnav.responsive li.dropdown {
+    position: absolute;
+}
+
+ul.topnav.responsive {
+    position: relative;
+
+}
+
+ul.topnav.responsive li {
+    display: inline;
+}
+
+ul.topnav.responsive li a {
+    display: block;
+}
+
+.logo {
+    width: 160px;
+    height: 40px;
+}
+
+
+/* ---------------  1st image  -------------- */
+    img.mainimg {
+    height: 550px;
+}
+
+.banner-text {
+    top: 39%;
+    left: 1%;
+}
+
+.banner-text h4 {
+    font-size: 16px; 
+}
+}

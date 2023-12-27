@@ -1,0 +1,279 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Inconsolata', monospace;
+
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.body {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.header {
+
+    background-color: #333;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+.main {
+
+    padding: 0 auto;
+
+}
+
+.faq-container {
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    background-color: #fff;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    color: #333;
+
+}
+
+.faq-item {
+
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid #ddd;
+
+    padding-bottom: 20px;
+
+}
+
+.question {
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    color: #007BFF;
+
+}
+
+.answer {
+
+    display: none;
+
+    font-size: 16px;
+
+    margin-top: 10px;
+
+    color: #555;
+
+}
+
+.question:hover {
+
+    text-decoration: underline;
+
+}
+
+.nav-bar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #094067;
+
+    padding: 10px;
+
+    height: 60px;
+
+}
+
+.nav-link {
+
+    text-decoration: none;
+
+    color: #ffff;
+
+    font-weight: bold;
+
+    margin-left: 20px;
+
+}
+
+.nav-link:hover {
+
+    color: #3da9fc;
+
+}
+
+
+.bottom-bar {
+
+    text-align: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #032b48;
+
+    color: #fff;
+
+    padding: 50px;
+
+}
+
+.social-icon {
+
+    vertical-align: middle;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    font-size: 24px;
+
+}
+
+.social-icon img {
+
+    vertical-align: middle;
+
+    width: 30px;
+
+    height: 30px;
+
+}
+
+.faq a {
+
+    text-decoration: none;
+
+    color: #fff;
+
+    font-weight: bold;
+
+    vertical-align: middle;
+
+}
+
+.about-us a {
+
+    text-decoration: none;
+
+    color: #fff;
+
+    font-weight: bold;
+
+    vertical-align: middle;
+
+}
+
+.logo {
+
+    width: 250px;
+
+    height: 250px;
+
+    position: relative;
+
+    right: 30px;
+
+}
+
+.search-bar {
+
+    width: 1050px;
+
+    height: 40px;
+
+    border: 1px solid #ffff;
+
+    border-radius: 5px;
+
+    padding: 10px;
+
+    position: relative;
+
+    right: 30px;
+
+    border-radius: 30px;
+
+}
+
+.social-icon, .about-us, .faq {
+
+    margin: 50px;
+
+}
+
+.category, .submit-button {
+
+    margin-top: 10px;
+}
+
+.courses-title-all-teachers, footer {
+
+    margin-top: 20px;
+
+}
+
+.faq-container, .faq-item {
+
+    margin: 20px;
+
+}
+
+@media (max-width: 1325px) {
+
+    .nav-bar a:nth-child(1) {
+
+        display: none;
+
+    }
+
+    .nav-bar a:nth-child(2) {
+
+    display: none;
+
+    }
+    
+    .nav-bar a:nth-child(3) {
+    
+        display: "Join";
+    
+    }
+    
+    .search-bar {
+
+        display: none;
+
+    }
+
+}

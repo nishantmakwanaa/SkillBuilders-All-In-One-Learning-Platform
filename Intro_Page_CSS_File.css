@@ -1,0 +1,225 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Inconsolata', monospace;
+
+    font-family: 'Mulish', sans-serif;
+
+}
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #ffff;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    * {
+
+        margin: 0;
+    
+        padding: 0;
+    
+        box-sizing: border-box;
+    
+        font-family: 'Inconsolata', monospace;
+    
+        font-family: 'Mulish', sans-serif;
+    
+    }
+
+.main {
+
+    display: flex;
+
+    flex-direction: row;
+}
+    
+}
+
+/* MAIN CONTENT */
+
+.main {
+
+    display: flex;
+
+    flex-direction: row;
+
+}
+
+.logo {
+
+    text-align: center;
+
+    margin-right: 100px;
+
+    justify-content: left;
+
+    display: flex;
+
+    align-items: left;
+
+    width: 700px; 
+    
+    height: auto;
+
+}
+
+h1 {
+
+    font-size: 50px;
+
+    margin-bottom: 50px;
+
+}
+
+.buttons button {
+
+    padding: 10px 20px;
+
+    font-size: 40px;
+
+    background-color: #007BFF;
+
+    color: #fff;
+
+    border: none;
+
+    width: 200px;
+    
+    text-align: center;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+.buttons button:hover {
+
+    background-color: #0056b3;
+
+}
+
+.dialog-container {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    z-index: 2;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.dialog-box {
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    border-radius: 5px;
+
+    width: 300px;
+
+    text-align: center;
+
+}
+
+.dialog-buttons button {
+
+    margin: 10px;
+
+    padding: 10px 20px;
+
+    font-size: 16px;
+
+    background-color: #007BFF;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+.dialog-buttons button:hover {
+
+    background-color: #0056b3;
+
+}
+
+.buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+
+    align-items: left;
+
+}
+
+/*MARGIN FOR THE BUTTONS*/
+
+.login-button , .sign-up-button {
+
+    margin: 30px;
+
+}
+
+.logo ,.buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: column;
+
+    right: 50px;
+
+}

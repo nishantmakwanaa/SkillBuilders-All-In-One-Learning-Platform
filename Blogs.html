@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Blogs </title>
+        <link rel="stylesheet" href="Blogs.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- ------------- NAV BAR ----------------- -->
+        <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img class="logo" src="Images/SkillBuilders logo.png" alt="Logo">
+                </div>
+                <div class="col-9">
+                    <ul class="topnav" id="dropdownClick">
+                        <li> <a href="Intro_Page_HTML_File.html"> Join For free </a> </li>
+                        <li> <a href="contactus.html"> Contact Us </a> </li>
+                        <li> <a href="Blogs.html"> Blogs </a> </li>
+                        <li> <a href="Courses.html"> Courses </a> </li>
+                        <li> <a href="About.html"> About Us </a> </li>
+                        <li> <a href="Index.html"> Home </a> </li>
+                        <li class="dropdown"> <a href="javascript:void(0);" onclick="dropdownMenu()"> &#x2635; </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </nav>
+        <!-- ------------- 1st image ----------------- -->
+        <div class="conatiner">
+            <div class="banner-card">
+                <img class="mainimg" src="Images/Blogs.png">
+                <div class="banner-text">
+                    <h4> Stay updated with latest </h4>
+                    <h4> news by our Expert Teacher's </h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ------------- 1st Blog sample ----------------- -->
+        <div class="main">
+        <div class="container">
+            <div class="row firstpost">
+                <div class="col-12 blog-card1">
+                    <div class="profile-card1"> 
+                        <img src="Images/img-1.jpg" alt="User Icon">
+                        <h2> Username </h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui eu mi 
+                        dignissim porta sed in ipsum. Ut ut mauris efficitur, ultrices nulla sed, lorem ipsum
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------- 2nd Blog sample ----------------- -->
+        <div class="container">
+            <div class="row secondpost">
+                <div class="col-12 blog-card2">
+                    <div class="profile-card2">
+                        <img src="Images/img-2.jpg" alt="User Icon">
+                        <h2> Username </h2>
+                    </div>
+                    <div  class="imgpost2">
+                        <img src="Images/uni back.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- ------------- 3rd Blog sample ----------------- -->
+        <div class="container">
+            <div class="row thirdpost">
+                <div class="col-12 blog-card3">
+                    <div class="profile-card3">
+                        <img src="Images/img-3.jpg" alt="User Icon">
+                        <h2> Username </h2>
+                    </div>
+                    <div  class="imgpost3">
+                        <img src="Images/building.jpg" alt="Image">
+                    </div>
+                    <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui eu mi 
+                        dignissim porta sed in ipsum. Ut ut mauris efficitur, ultrices nulla sed. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <!-- ------------- 4th Blog sample ----------------- -->
+        <div class="container">
+            <div class="row fourthpost">
+                <div class="col-12 blog-card4">
+                    <div class="profile-card4">
+                        <img src="Images/img-4.jpg" alt="User Icon">
+                        <h2> Username </h2>
+                    </div>
+                    <div  class="imgpost4">
+                        <img src="Images/grads.gif" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+
+        <footer class="bottom-bar">
+            <div class="social-media">
+                <a href="#" class="social-icon"><img src="Images/FACEBOOK_ICON.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="Images/TWITTER_ICON.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="Images/INSTAGRAM_ICON.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="Images/LINKEDLN_ICON.png" alt="LinkedIn"></a>
+            </div>
+
+            <div class="faq">
+                <a href="Faq.html">FAQ</a>
+            </div>
+
+            <div class="about-us">
+                <a href="About.html">About Us</a>
+            </div>
+
+        </footer>
+        
+
+
+
+
+
+
+
+
+
+
+        <!-- ----------------- JS script for media query ------------ -->
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    </body>
+</html>

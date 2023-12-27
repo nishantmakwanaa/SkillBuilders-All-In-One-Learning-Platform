@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBuilders - Intro Page</title>
+
+    <link rel="stylesheet" href="Intro_Page_CSS_File.css">
+
+</head>
+
+<body>
+
+    <div class="Title">
+
+        <h1>SkillBuilders - Your All In One Learing Platform.</h1>
+
+    </div>
+
+    <div class="main">
+
+    <img src="Images/Intro_Illustrator.jpg" alt="Logo" class="logo">
+
+    <div class="buttons">
+
+        <div class="login-button-class">
+
+        <button id="loginButton"><a href="login.html"></a>Login</button>
+
+    </div>
+
+    <div class="sign-up-button">
+
+        <button id="signupButton"><a href="registration.html"></a>Sign Up</button>
+
+    </div>
+
+    </div>
+
+    <div id="dialog" class="dialog-container">
+
+        <div class="dialog-box">
+
+            <h2>Sign Up</h2>
+
+            <p>Select an option:</p>
+
+            <div class="dialog-buttons">
+
+                <button id="studentButton">For Students</button>
+
+                <button id="teacherButton">For Teachers</button>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        document.getElementById("loginButton").addEventListener("click", function() {
+            
+            window.location.href = "login.html";
+
+        });
+
+        document.getElementById("signupButton").addEventListener("click", function() {
+            
+            document.getElementById("dialog").style.display = "flex";
+
+        });
+
+        document.getElementById("studentButton").addEventListener("click", function() {
+            
+            window.location.href = "registration.html";
+        });
+
+        document.getElementById("teacherButton").addEventListener("click", function() {
+            
+            window.location.href = "registration.html";
+
+        });
+
+    </script>
+
+</body>
+
+</html>

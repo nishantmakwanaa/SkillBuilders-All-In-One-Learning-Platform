@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBuilders - FAQ Page</title>
+
+    <link rel="stylesheet" href="Faq.css">
+
+</head>
+
+<body>
+    
+    <div class="nav-bar">
+    
+        <img src="Images/LOGO.png" alt="Logo" class="logo">
+
+        <input type="primary-text" placeholder="Search Courses..." class="search-bar">
+
+        <div class="nav-links">
+
+            <a href="Home.html" class="nav-link">Home</a>
+
+            <a href="Blogs.html" class="nav-link">Blogs</a>
+
+            <a href="Intro_Page_HTML_File.html" class="nav-link">Join</a>
+
+        </div>
+
+    </div>
+
+    <div class="faq-container">
+
+        <h1>Frequently Asked Qustions</h1>
+
+
+        <div class="faq-item">
+
+            <h2 class="question">1. What is Lorem Ipsum and why is it used?</h2>
+
+            <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non quam vitae arcu semper elementum. Duis vel velit vel augue placerat rhoncus.</p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h2 class="question">2. How can I create an account?</h2>
+
+            <p class="answer">To create an account, click on the 'Sign Up' button on the homepage and follow the registration process.</p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h2 class="question">3. Is my personal information secure?</h2>
+
+            <p class="answer">Yes, we take the security of your personal information seriously. We use advanced encryption and security measures to protect your data.</p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h2 class="question">4. What payment methods do you accept?</h2>
+
+            <p class="answer">We accept credit cards, PayPal, and other popular payment methods. You can view the complete list during the checkout process.</p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h2 class="question">5. How can I contact customer support?</h2>
+
+            <p class="answer">You can contact our support team by emailing support@example.com or calling +1-123-456-7890.</p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h2 class="question">6. Do you offer refunds?</h2>
+
+            <p class="answer">Yes, we offer refunds within 30 days of purchase. Please refer to our refund policy for more details.</p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h2 class="question">7. Can I change my account password?</h2>
+
+            <p class="answer">Yes, you can change your account password by going to your account settings and selecting the 'Change Password' option.</p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h2 class="question">8. How do I reset my forgotten password?</h2>
+
+            <p class="answer">To reset your password, click on the 'Forgot Password' link on the login page and follow the instructions sent to your email.</p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h2 class="question">9. Do you have a mobile app?</h2>
+
+            <p class="answer">Yes, we have a mobile app available for both iOS and Android devices. You can download it from the App Store or Google Play.</p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h2 class="question">10. How can I unsubscribe from email notifications?</h2>
+
+            <p class="answer">You can unsubscribe from email notifications by going to your account settings and selecting the 'Email Preferences' option.</p>
+
+        </div>
+
+    </div>
+
+    <footer class="bottom-bar">
+
+        <div class="social-media">
+
+            <a href="#" class="social-icon"><img src="Images/FACEBOOK_ICON.png" alt="Facebook"></a>
+
+            <a href="#" class="social-icon"><img src="Images/TWITTER_ICON.png" alt="Twitter"></a>
+
+            <a href="#" class="social-icon"><img src="Images/INSTAGRAM_ICON.png" alt="Instagram"></a>
+
+            <a href="#" class="social-icon"><img src="Images/LINKEDLN_ICON.png" alt="LinkedIn"></a>
+
+        </div>
+
+        <div class="faq">
+
+            <a href="Faq.html">FAQ</a>
+
+        </div>
+
+        <div class="about-us">
+
+            <a href="#">About Us</a>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const questions = document.querySelectorAll(".question");
+
+    questions.forEach((question) => {
+
+        question.addEventListener("click", function () {
+
+            const answer = this.nextElementSibling;
+
+            if (answer.style.display === "block") {
+
+                answer.style.display = "none";
+
+            } else {
+
+                answer.style.display = "block";
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>

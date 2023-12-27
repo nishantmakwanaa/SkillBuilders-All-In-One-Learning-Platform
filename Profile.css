@@ -1,0 +1,212 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    background-color: rgb(253, 247, 238);
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #fff;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+a {
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+}
+
+nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav.item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background: #eee;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+
+.main {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+.main-top {
+    display: flex;
+    width: 100px;
+}
+
+.main-top i {
+    position: absolute;
+    right: 0;
+    margin: 10px 300px;
+    color: rgb(11, 109, 109);
+    cursor: pointer;
+}
+
+.main-skills {
+    display: flex;
+    margin-top: 2px;
+}
+
+.main-skills .card {
+    width: 25%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.main-skills .card h3 {
+    margin: 10px;
+    text-transform: capitalize;
+
+}
+
+.main-skills .card button {
+    background-color: rgb(9, 57, 139);
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.main-skills .card button:hover {
+    background: rgba(6, 75, 154, 0.856);
+}
+
+/* Courses */
+
+.main-courses {
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.courses-box {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgb(0, 0, 0, 0.1);
+}
+
+.courses-box ul {
+    list-style: none;
+    display: flex;
+}
+
+.courses-box ul li {
+    margin: 10px;
+    /* padding: 2; */
+    color: gray;
+    cursor: pointer;
+}
+
+.courses-box ul.active {
+    color: solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.courses-box .Courses {
+    display: flex;
+}
+
+.box {
+    width: 40%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.box p {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.box button {
+    background: #000;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.box button:hover{
+    background: rgba(36, 82, 236, 0.856);
+}
+
+.box{
+    font-size: 7rem;
+    float:right;
+    margin: 10px 20px 100px -30;
+}
+.html{
+    color: rgb(25, 94,54);
+}
+.css{
+    color: rgb(104,179,35);
+}
+.js{
+    color: blue;
+}
